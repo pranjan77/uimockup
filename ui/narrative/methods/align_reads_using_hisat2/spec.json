@@ -219,7 +219,7 @@
   "behavior" : {
     "service-mapping" : {
       "url" : "",
-      "name" : "KBaseRNASeq",
+      "name" : "uimockup",
       "method" : "Hisat2Call",
       "input_mapping" : [
         {
