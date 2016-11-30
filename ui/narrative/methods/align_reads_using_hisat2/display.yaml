@@ -31,6 +31,11 @@ parameters :
             Genome
         short-hint : |
             Select the Genome to align the reads
+    domain :
+        ui-name : |
+            Domain 
+        short-hint : |
+            The domain of the genome - prokaryotes vs. eukaryotes
     run_stringtie :
         ui-name : |
             Run StringTie and generate expression matrix

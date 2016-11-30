@@ -36,8 +36,7 @@ module uimockup {
         bool no_spliced_alignment;
         bool transcriptome_mapping_only;
         string tailor_alignments;
-
-
+        string domain;
         bool run_stringtie;
         } Hisat2Params;
 
