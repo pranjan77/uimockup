@@ -20,7 +20,7 @@ class uimockup:
     #########################################
     VERSION = "0.0.1"
     GIT_URL = "git@github.com:pranjan77/uimockup.git"
-    GIT_COMMIT_HASH = "513c4ae9cc222299cc8892112a71d336e3b21a5e"
+    GIT_COMMIT_HASH = "aaf3c6fa2b034ec4a27ee828d5987229cbee13b0"
     
     #BEGIN_CLASS_HEADER
     #END_CLASS_HEADER
