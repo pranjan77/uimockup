@@ -15,6 +15,15 @@ module uimockup {
 		string report_ref;
 }ResultsToReport;
 
+    typedef structure {
+        string adapter_sequence_3P;
+        bool anchored_3P;
+    } FivePrimeOptions;
+
+    typedef structure {
+        string adapter_sequence_5P;
+        bool anchored_5P;
+    } ThreePrimeOptions;
 
 
 
@@ -38,6 +47,8 @@ module uimockup {
         string tailor_alignments;
         string domain;
         bool run_stringtie;
+        FivePrimeOptions five_prime;
+        ThreePrimeOptions three_prime;
         } Hisat2Params;
 
   async funcdef Hisat2Call( Hisat2Params params )  returns(ResultsToReport) authentication required;

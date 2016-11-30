@@ -233,7 +233,55 @@
     "text_options" : {
      "validate_as": "int"
     }
-  }, {
+  }, 
+
+    {
+            "id": "adapter_sequence_5P",
+            "optional": false,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": null,
+            "field_type": "text",
+            "text_options": { }
+        },
+        {
+            "id": "anchored_5P",
+            "optional": false,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [1],
+            "field_type": "checkbox",
+            "checkbox_options": {
+                "checked_value": 1,
+                "unchecked_value": 0
+            }
+        },
+
+
+        {
+            "id": "adapter_sequence_3P",
+            "optional": false,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": null,
+            "field_type": "text",
+            "text_options": { }
+        },
+        {
+            "id": "anchored_3P",
+            "optional": false,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [0],
+            "field_type": "checkbox",
+            "checkbox_options": {
+                "checked_value": 1,
+                "unchecked_value": 0
+            }
+        },
+
+
+{
     "id" : "orientation",
     "optional" : true,
     "advanced" : true,
@@ -263,6 +311,25 @@
       ]
     }
   } ],
+
+    "parameter-groups": [
+        {
+            "id": "5P",
+            "parameters": ["adapter_sequence_5P", "anchored_5P"],
+            "optional": true,
+            "allow_multiple": false,
+            "with_border": true 
+        },
+        {
+            "id": "3P",
+            "parameters": ["adapter_sequence_3P", "anchored_3P"],
+            "optional": true,
+            "allow_multiple": false,
+            "with_border": true 
+        }
+   ],
+
+
   "behavior" : {
     "service-mapping" : {
       "url" : "",
@@ -321,10 +388,23 @@
           "input_parameter" : "transcriptome_mapping_only",
           "target_property" : "transcriptome_mapping_only"
         },
-	{
+				{
           "input_parameter" : "tailor_alignments",
           "target_property" : "tailor_alignments"
         },
+				{
+          "input_parameter" : "domain",
+          "target_property" : "domain"
+        },
+
+					{
+							"input_parameter": "5P",
+							"target_property": "five_prime"
+					},
+					{
+							"input_parameter": "3P",
+							"target_property": "three_prime"
+					},
         {
           "input_parameter" : "minins",
           "target_property" : "minins"
