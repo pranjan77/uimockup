@@ -9,14 +9,14 @@
     "output" : "kbaseRNASeqPieNew"
   },
    "parameters" : [ {
-    "id" : "sampleset_id",
+    "id" : "readset_id",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : ["KBaseRNASeq.RNASeqSampleSet" , "KBaseAssembly.SingleEndLibrary", "KBaseAssembly.PairedEndLibrary"]
+      "valid_ws_types" : ["KBaseSets.ReadsSet" , "KBaseFile.SingleEndLibrary", "KBaseFile.PairedEndLibrary"]
     }
   }, {
     "id" : "genome_id",
@@ -92,6 +92,18 @@
       "checked_value": 1,
       "unchecked_value": 0
     }
+ }, {
+    "id": "run_stringtie",
+    "optional":true,
+    "advanced":true,
+    "allow_multiple":false,
+    "default_values":[""],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  
   }, {
     "id": "transcriptome_mapping_only",
     "optional":true,
@@ -227,8 +239,8 @@
           "target_property" : "ws_id"
         },
         {
-          "input_parameter" : "sampleset_id",
-          "target_property" : "sampleset_id"
+          "input_parameter" : "readset_id",
+          "target_property" : "readset_id"
         },
         {
           "input_parameter" : "genome_id",

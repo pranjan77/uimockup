@@ -20,7 +20,7 @@ module uimockup {
 
    typedef structure {
         string ws_id;
-        string sampleset_id;
+        string readset_id;
         string genome_id;
         int num_threads;
         string quality_score;
@@ -36,6 +36,9 @@ module uimockup {
         bool no_spliced_alignment;
         bool transcriptome_mapping_only;
         string tailor_alignments;
+
+
+        bool run_stringtie;
         } Hisat2Params;
 
   async funcdef Hisat2Call( Hisat2Params params )  returns(ResultsToReport) authentication required;

@@ -21,7 +21,7 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    sampleset_id :
+    readset_id :
         ui-name : |
             RNA-seq Sample or Sample Set 
         short-hint : |
@@ -31,6 +31,12 @@ parameters :
             Genome
         short-hint : |
             Select the Genome to align the reads
+    run_stringtie :
+        ui-name : |
+            Run StringTie and generate expression matrix
+        short-hint : |
+            Assemble and quantitate full-length transcripts using StringTie to generate expression matrix
+
     quality_score :
         ui-name : |
             Alignment Quality Score Type
