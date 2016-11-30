@@ -7,6 +7,15 @@ module uimockup {
 /* indicates true or false values, false <= 0, true >=1 */
 	typedef int bool; 
 
+/*
+     Object for Report type
+*/
+    typedef structure {
+		string report_name;
+		string report_ref;
+}ResultsToReport;
+
+
 
   typedef structure{
         string ws_id;
