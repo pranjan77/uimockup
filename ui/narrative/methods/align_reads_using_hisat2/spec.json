@@ -61,7 +61,8 @@
     "text_options" : {
       "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ],
       "is_output_name":true
-}, 
+    }
+  }, 
   {
     "id" : "num_threads",
     "optional" : true,
