@@ -238,7 +238,7 @@
     {
             "id": "adapter_sequence_5P",
             "optional": false,
-            "advanced": false,
+            "advanced": true,
             "allow_multiple": false,
             "default_values": null,
             "field_type": "text",
@@ -247,7 +247,7 @@
         {
             "id": "anchored_5P",
             "optional": false,
-            "advanced": false,
+            "advanced": true,
             "allow_multiple": false,
             "default_values": [1],
             "field_type": "checkbox",
@@ -261,7 +261,7 @@
         {
             "id": "adapter_sequence_3P",
             "optional": false,
-            "advanced": false,
+            "advanced": true,
             "allow_multiple": false,
             "default_values": null,
             "field_type": "text",
@@ -270,7 +270,7 @@
         {
             "id": "anchored_3P",
             "optional": false,
-            "advanced": false,
+            "advanced": true,
             "allow_multiple": false,
             "default_values": [0],
             "field_type": "checkbox",
