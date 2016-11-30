@@ -23,9 +23,9 @@ method-suggestions :
 parameters :
     readset_id :
         ui-name : |
-            RNA-seq Sample or Sample Set 
+            RNA-seq reads or readset 
         short-hint : |
-            Select the RNA-seq read sample set associated with the RNA-seq experiment. Alternatively, if you have only one sample of RNA-seq reads, select the corresponding library object.
+            Select the RNA-seq read set associated with the RNA-seq experiment. Alternatively, if you have only one sample of RNA-seq reads, select the corresponding object.
     genome_id :
         ui-name : |
             Genome
