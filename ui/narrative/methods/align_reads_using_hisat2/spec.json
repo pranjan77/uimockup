@@ -318,6 +318,7 @@
             "parameters": ["adapter_sequence_5P", "anchored_5P"],
             "optional": true,
             "allow_multiple": false,
+            "advanced": true, 
             "with_border": true 
         },
         {
@@ -325,6 +326,7 @@
             "parameters": ["adapter_sequence_3P", "anchored_3P"],
             "optional": true,
             "allow_multiple": false,
+            "advanced": true,
             "with_border": true 
         }
    ],
