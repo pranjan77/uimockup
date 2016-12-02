@@ -70,7 +70,7 @@
         {
             "id": "prefix_output_objects",
             "optional": true,
-            "advanced": true,
+            "advanced": false,
             "allow_multiple": false,
             "default_values": [
                 "EXP"
