@@ -483,6 +483,7 @@
                 "transcriptome_mapping_only"
             ],
             "optional": true,
+            "advanced": true,
             "allow_multiple": false,
             "with_border": true
         },
@@ -503,6 +504,7 @@
             ],
             "optional": true,
             "allow_multiple": false,
+            "advanced": true,
             "with_border": true
         }
     ],
