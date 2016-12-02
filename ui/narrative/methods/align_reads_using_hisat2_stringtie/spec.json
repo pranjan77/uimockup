@@ -17,7 +17,7 @@
             "id": "readset_id",
             "optional": false,
             "advanced": false,
-            "allow_multiple": false,
+            "allow_multiple": true,
             "default_values": [
                 ""
             ],

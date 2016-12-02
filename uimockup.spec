@@ -48,7 +48,7 @@ module uimockup {
 
     typedef structure {
         string ws_id;
-        string readset_id;
+        list <string> readset_id;
         string genome_id;
         string domain;
         string tailor_alignments;
