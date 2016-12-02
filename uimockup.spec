@@ -32,7 +32,6 @@ module uimockup {
         } Hisat2Params;
 
     typedef structure {
-        int num-threads;
         string label;
         float min_isoform_abundance;
         int a_juncs;
@@ -55,8 +54,8 @@ module uimockup {
         string tailor_alignments;
         bool run_stringtie;
         string prefix_output_objects;
-        Hisat2Params Hisat2;
-        StringTieParams StringTie;
+        Hisat2Params Hisat2_grouped_params;
+        StringTieParams StringTie2_grouped_params;
         } Hisat2AndStringTieParams;
 
     async funcdef Hisat2AndStringTieCall( Hisat2AndStringTieParams params )
