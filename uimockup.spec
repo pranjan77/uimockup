@@ -11,26 +11,11 @@ module uimockup {
      Object for Report type
 */
     typedef structure {
-		string report_name;
-		string report_ref;
-}ResultsToReport;
+    		string report_name;
+		    string report_ref;
+        } ResultsToReport;
 
     typedef structure {
-        string adapter_sequence_3P;
-        bool anchored_3P;
-    } FivePrimeOptions;
-
-    typedef structure {
-        string adapter_sequence_5P;
-        bool anchored_5P;
-    } ThreePrimeOptions;
-
-
-
-   typedef structure {
-        string ws_id;
-        string readset_id;
-        string genome_id;
         int num_threads;
         string quality_score;
         int skip;
@@ -44,14 +29,37 @@ module uimockup {
         int max_intron_length;
         bool no_spliced_alignment;
         bool transcriptome_mapping_only;
-        string tailor_alignments;
-        string domain;
-        bool run_stringtie;
-        FivePrimeOptions five_prime;
-        ThreePrimeOptions three_prime;
         } Hisat2Params;
 
-  async funcdef Hisat2Call( Hisat2Params params )  returns(ResultsToReport) authentication required;
+    typedef structure {
+        int num-threads;
+        string label;
+        float min_isoform_abundance;
+        int a_juncs;
+        int  min_length;
+        float j_min_reads;
+        float c_min_read_coverage;
+        int gap_sep_value;
+        bool disable_trimming;
+        bool ballgown_mode;
+        bool skip_reads_with_no_ref;
+        string merge;
+        } StringTieParams;
+
+
+    typedef structure {
+        string ws_id;
+        string readset_id;
+        string domain;
+        bool run_stringtie;
+        string genome_id;
+        string prefix_output_objects;
+        Hisat2Params Hisat2;
+        StringTieParams StringTie;
+        } Hisat2AndStringTieParams;
+
+    async funcdef Hisat2AndStringTieCall( Hisat2AndStringTieParams params )
+                  returns(ResultsToReport) authentication required;
 
 
 
