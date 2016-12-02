@@ -18,16 +18,16 @@ module uimockup {
     typedef structure {
         int num_threads;
         string quality_score;
+        int min_intron_length;
+        int max_intron_length;
+        bool no_spliced_alignment;
         int skip;
-        int trim3;
         int trim5;
+        int trim3;
         int np;
         int minins;
         int maxins;
         string orientation;
-        int min_intron_length;
-        int max_intron_length;
-        bool no_spliced_alignment;
         bool transcriptome_mapping_only;
         } Hisat2Params;
 
@@ -50,9 +50,10 @@ module uimockup {
     typedef structure {
         string ws_id;
         string readset_id;
-        string domain;
-        bool run_stringtie;
         string genome_id;
+        string domain;
+        string tailor_alignments;
+        bool run_stringtie;
         string prefix_output_objects;
         Hisat2Params Hisat2;
         StringTieParams StringTie;
