@@ -67,17 +67,31 @@
                 ]
             }
         },
-        {
-            "id": "prefix_output_objects",
-            "optional": true,
-            "advanced": false,
-            "allow_multiple": false,
-            "default_values": [
-                "EXP"
-            ],
-            "field_type": "text"
-        },
-        {
+{
+    "id" : "ws_expression_matrix_id",
+    "optional" : true,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ],
+      "is_output_name":true
+    } 
+ },
+{
+    "id" : "ws_alignment_set_id",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseRNASeq.RNASeqAlignmentSet" ],
+      "is_output_name":true
+    } 
+ },
+          {
             "id": "run_stringtie",
             "optional": false,
             "advanced": false,
@@ -531,9 +545,14 @@
                     "target_property": "domain"
                 },
                 {
-                    "input_parameter": "prefix_output_objects",
-                    "target_property": "prefix_output_objects"
+                    "input_parameter": "ws_alignment_set_id",
+                    "target_property": "ws_alignment_set_id"
+               },
+                {
+                    "input_parameter": "ws_expression_matrix_id",
+                    "target_property": "ws_expression_matrix_id"
                 },
+
                 {
                     "input_parameter": "run_stringtie",
                     "target_property": "run_stringtie"

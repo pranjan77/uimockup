@@ -41,11 +41,17 @@ parameters :
       Run StringTie and generate expression matrix
     short-hint : |
       Assemble and quantitate full-length transcripts using StringTie to generate expression matrix
-  prefix_output_objects :
+  ws_alignment_set_id :
     ui-name : |
-      Prefix for all output object names
+      Alignment set
     short-hint : |
-      Provide  a prefix that will be used in the output of Alignment / Expression matrix object
+      Name for output Alignmentset object
+  ws_expression_matrix_id :
+    ui-name : |
+      Expression Matrix id
+    short-hint : |
+      Name for output expression matrix object (Needed when Run StringTie option selectea!)
+
   tailor_alignments :
     ui-name : |
       Tailor Alignments for different Tools 

@@ -53,7 +53,8 @@ module uimockup {
         string domain;
         string tailor_alignments;
         bool run_stringtie;
-        string prefix_output_objects;
+        string ws_alignment_set_id;
+        string ws_expression_matrix_id; 
         Hisat2Params Hisat2_grouped_params;
         StringTieParams StringTie2_grouped_params;
         } Hisat2AndStringTieParams;
