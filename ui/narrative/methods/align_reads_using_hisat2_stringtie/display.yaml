@@ -38,7 +38,7 @@ parameters :
       The domain of the genome - prokaryotes vs. eukaryotes
   run_stringtie :
     ui-name : |
-      Run StringTie and generate expression matrix
+      Generate Expression Matrix (provide name below)
     short-hint : |
       Assemble and quantitate full-length transcripts using StringTie to generate expression matrix
   ws_alignment_set_id :
@@ -50,7 +50,7 @@ parameters :
     ui-name : |
       Expression Matrix id
     short-hint : |
-      Name for output expression matrix object (Needed when Run StringTie option selectea!)
+      Name for output expression matrix object (Needed when generate expression matrix option is selected!)
 
   tailor_alignments :
     ui-name : |
